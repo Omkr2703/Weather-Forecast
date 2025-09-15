@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmer Portal</title>
+  <link rel="stylesheet" href="indx.css">
+</head>
+<body>
+  <div class="container">
+    <h2> Weather App </h2>
+    <div class="search-box">
+      <input type="text" id="city" placeholder="Enter city name" 
+             onkeypress="if(event.key==='Enter'){getWeather()}">
+      <button onclick="getWeather()">🔍</button>
+    </div>
+
+    <div id="weather">
+      <div class="weather-icon">⛅</div>
+      <div class="temperature" id="temp">--°C</div>
+      <div class="city-name" id="cityName">---</div>
+      <div class="details">
+        <div>💧 <span id="humidity">--%</span><br>Humidity</div>
+        <div>🌬️ <span id="wind">-- km/h</span><br>Wind Speed</div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="indx.js"></script>
+</body>
+</html>
